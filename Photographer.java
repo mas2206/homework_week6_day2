@@ -25,4 +25,8 @@ public class Photographer {
     return null;
   }
 
+  // public String showCollectionDetails() {
+  //   return collection.printDetails();
+  // }
+
 }

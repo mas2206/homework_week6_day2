@@ -46,4 +46,11 @@ public class PhotographerTest{
     assertEquals( "Analog camera was binned", original.binned() );
   }
 
+  // @Test
+  // public void canPrintDetails() {
+  //   photographer.addCamera(digitalCamera);
+  //   photographer.addCamera(analogCamera);
+  //   assertEquals( "nonsense", photographer.showCollectionDetails() );
+  // }
+
 }
