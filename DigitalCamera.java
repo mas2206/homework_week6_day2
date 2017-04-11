@@ -4,4 +4,8 @@ public class DigitalCamera implements Printable {
     return "*digital camera model*";
   }
 
+  public String binned() {
+    return "Digital camera was binned";
+  }
+
 }

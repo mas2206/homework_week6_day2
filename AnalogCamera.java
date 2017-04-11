@@ -4,4 +4,8 @@ public class AnalogCamera implements Printable {
     return "*analog camera model*";
   }
 
+  public String binned() {
+    return "Analog camera was binned";
+  }
+
 }

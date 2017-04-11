@@ -30,4 +30,20 @@ public class PhotographerTest{
     assertEquals( 1, photographer.collectionSize() );
   }
 
+  @Test
+  public void canRemoveDigitalCamera() {
+    photographer.addCamera(digitalCamera);
+    Printable camera = photographer.removeCamera();
+    DigitalCamera original = (DigitalCamera)camera;
+    assertEquals( "Digital camera was binned", original.binned() );
+  }
+
+  @Test
+  public void canRemoveAnalogCamera() {
+    photographer.addCamera(analogCamera);
+    Printable camera = photographer.removeCamera();
+    AnalogCamera original = (AnalogCamera)camera;
+    assertEquals( "Analog camera was binned", original.binned() );
+  }
+
 }
