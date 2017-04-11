@@ -10,4 +10,19 @@ public class Photographer {
     this.collection = new ArrayList<Printable>();
   }
 
+  public int collectionSize(){
+    return collection.size();
+  }
+
+  public void addCamera(Printable camera) {
+    collection.add(camera);
+  }
+
+  public Printable removeCamera() {
+    if(collectionSize() > 0){
+      return collection.remove(0);
+    }
+    return null;
+  }
+
 }
