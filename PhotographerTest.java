@@ -18,4 +18,16 @@ public class PhotographerTest{
     assertEquals( 0, photographer.collectionSize() );
   }
 
+  @Test
+  public void canAddDigitalCamera() {
+    photographer.addCamera(digitalCamera);
+    assertEquals( 1, photographer.collectionSize() );
+  }
+
+  @Test
+  public void canAddAnalogCamera() {
+    photographer.addCamera(analogCamera);
+    assertEquals( 1, photographer.collectionSize() );
+  }
+
 }
